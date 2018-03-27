@@ -1,0 +1,16 @@
+Package: biblionetwork
+Title: Generates Edge (Co-occurrence) and Node Lists
+Version: 0.0.0.9000
+Authors@R: person("Ariel", "Zane", email = "ariel.zane@nih.gov", role = c("aut", "cre"))
+Description: Generates co-occurrence edge and node lists from bibliometric data formats, for use in creating social networks
+Depends: R (>= 3.4.3)
+Imports:
+    dplyr,
+    purrr,
+    stringr,
+    tidyr
+License: This project is in the public domain within the United States, and copyright and related rights in the work worldwide are waived through the [CC0 1.0 Universal public domain dedication](https://creativecommons.org/publicdomain/zero/1.0/)
+URL: https://github.niaid.nih.gov/zaneac/
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.0.1

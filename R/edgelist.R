@@ -33,7 +33,7 @@ make_edgelist <- function(df, node_col, separator){
   edge_list <-
     df %>%
     pull(!!node_col) %>%
-    str_split(separator) %>%
+    stringr::str_split(separator) %>%
     map_dfr(function(x) {expand.grid(x, x, stringsAsFactors = FALSE)}) %>%
     filter(!Var1 == Var2) %>%
     mutate(X1 = ifelse(Var1 < Var2, Var1, Var2),
